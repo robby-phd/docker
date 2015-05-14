@@ -5,7 +5,8 @@ RUN apt-get update && \
     cd /usr/lib32 && \
     ln -sf libstdc++.so.6 libc++.so && \
     cd /opt && \
-    wget -q http://files.sireum.org/sireum-dev-linux64.tar.gz && \
-    tar xfz sireum-dev-linux64.tar.gz && \
-    rm sireum-dev-linux64.tar.gz && \
-    Sireum/sireum install "Sireum Amandroid Cli"
+    wget -q https://bintray.com/artifact/download/sireum/cli/sireum-cli-dev-linux64.tar.gz.part_00 && \
+    wget -q https://bintray.com/artifact/download/sireum/cli/sireum-cli-dev-linux64.tar.gz.part_01 && \
+    wget -q https://bintray.com/artifact/download/sireum/cli/sireum-cli-dev-linux64.tar.gz.part_02 && \
+    cat *.part_* | tar xz && \
+    rm *.part_*
