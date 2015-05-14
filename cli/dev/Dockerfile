@@ -7,6 +7,5 @@ RUN apt-get update && \
     cd /opt && \
     wget -q https://bintray.com/artifact/download/sireum/cli/sireum-cli-dev-linux64.tar.gz.part_00 && \
     wget -q https://bintray.com/artifact/download/sireum/cli/sireum-cli-dev-linux64.tar.gz.part_01 && \
-    wget -q https://bintray.com/artifact/download/sireum/cli/sireum-cli-dev-linux64.tar.gz.part_02 && \
     cat *.part_* | tar xz && \
     rm *.part_*
