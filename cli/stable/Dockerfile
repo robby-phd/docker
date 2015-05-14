@@ -10,4 +10,4 @@ RUN apt-get update && \
     wget -q https://bintray.com/artifact/download/sireum/cli/sireum-cli-stable-linux64.tar.gz.part_02 && \
     cat *.part_* | tar xz && \
     rm *.part_*
-ENV PATH=/opt/Sireum:$PATH
+ENV PATH /opt/Sireum:$PATH
