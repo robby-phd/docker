@@ -8,5 +8,5 @@ RUN apt-get update && \
     wget -q http://files.sireum.org/sireum-dev-linux64.tar.gz && \
     tar xfz sireum-dev-linux64.tar.gz && \
     rm sireum-dev-linux64.tar.gz && \
-    sireum install "Sireum Amandroid Cli"
+    Sireum/sireum install "Sireum Amandroid Cli"
 ENV PATH /opt/Sireum:$PATH
